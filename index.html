@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>HiveBoard: An Open, Modular, 3D-Printed Dexterity Benchmark for Industrial Robotic Manipulation</title>
+<meta name="description" content="HiveBoard is an open, modular, fully 3D-printed dexterity benchmark for industrial robotic manipulation. A hexagonal honeycomb base accepts 13 interchangeable attachments covering torque, precision, and composed assembly tasks." />
+<meta property="og:title" content="HiveBoard: A 3D-Printed Dexterity Benchmark for Industrial Robotic Manipulation" />
+<meta property="og:description" content="Open, modular, fully 3D-printable dexterity benchmark with 13 attachments across torque, precision, and composed assembly tasks." />
+<meta property="og:image" content="https://ricardovgodoy.github.io/hiveboard-web/assets/hero.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">⬢</span><span class="logo-text">HiveBoard</span>
+    </a>
+    <nav class="site-nav">
+      <a href="#overview">Overview</a>
+      <a href="#attachments">Attachments</a>
+      <a href="#getstarted">Get Started</a>
+      <a href="#protocol">Protocol</a>
+      <a href="#resources">Resources</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="container">
+    <h1>HiveBoard</h1>
+    <p class="tagline">An open, modular, 3D-printed dexterity benchmark<br />for industrial robotic manipulation</p>
+    <p class="authors">&lt;authors&gt;</p>
+    <p class="affiliations">USP Robotics Center · São Carlos School of Engineering · University of São Paulo</p>
+    <div class="cta-buttons">
+      <a class="btn btn-primary" href="#" id="paper-link">📄 Paper</a>
+      <a class="btn" href="https://github.com/ricardovgodoy/HiveBoard">💻 Code &amp; STL</a>
+      <a class="btn" href="https://github.com/ricardovgodoy/HiveBoard/tree/main/Documentation">📋 Protocol</a>
+      <a class="btn" href="#citation">📚 BibTeX</a>
+    </div>
+    <figure class="hero-figure">
+      <img src="assets/hero.jpg" alt="HiveBoard with the full attachment library laid out on a benchtop" />
+    </figure>
+  </div>
+</section>
+
+<!-- QUICK PITCH -->
+<section class="pitch">
+  <div class="container">
+    <div class="pitch-grid">
+      <div class="pitch-item">
+        <div class="pitch-icon">⬢</div>
+        <h3>13 Attachments</h3>
+        <p>Torque, precision, and composed assembly tasks on a single hexagonal base</p>
+      </div>
+      <div class="pitch-item">
+        <div class="pitch-icon">🖨️</div>
+        <h3>Print &amp; Go</h3>
+        <p>Fully 3D-printable on consumer-grade FDM machines, PLA only</p>
+      </div>
+      <div class="pitch-item">
+        <div class="pitch-icon">⚙️</div>
+        <h3>Sim Ready</h3>
+        <p>Articulated CAD assets in URDF and USD for MuJoCo, PyBullet, and Isaac Sim</p>
+      </div>
+      <div class="pitch-item">
+        <div class="pitch-icon">📊</div>
+        <h3>Reproducible</h3>
+        <p>Standardized protocol, success criteria, and trial logging template</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OVERVIEW -->
+<section id="overview" class="section">
+  <div class="container">
+    <h2>Overview</h2>
+    <div class="overview-grid">
+      <div class="overview-text">
+        <p>
+          Industrial manipulation requires a heterogeneous skill set. Operators routinely turn valves, throw breakers, thread fasteners, drive screws, press buttons, open and close enclosures, and execute multi-step assembly procedures. Each of these actions involves a different combination of perception, contact reasoning, and force control.
+        </p>
+        <p>
+          <strong>HiveBoard</strong> is a low-barrier physical benchmark that captures this diversity in a way any laboratory can reproduce on its own hardware. A hexagonal honeycomb base accepts 13 interchangeable attachments grouped into three categories. Each attachment is printed as a single piece with a hexagonal footprint that mates with the base by press-fit, no fasteners required.
+        </p>
+        <p>
+          Every attachment ships with simulation-ready CAD, so the same task is available in real and simulated environments. The full benchmark, the protocol, and the trial logging template are released under a permissive license.
+        </p>
+      </div>
+      <figure class="overview-figure">
+        <img src="assets/hive_empty.jpg" alt="The HiveBoard base, a seven-cell hexagonal honeycomb" />
+        <figcaption>The HiveBoard base: seven hexagonal cells in a honeycomb pattern.</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- ATTACHMENTS -->
+<section id="attachments" class="section section-alt">
+  <div class="container">
+    <h2>Attachment Library</h2>
+    <p class="section-lede">
+      Each printed part (left) is shown next to its digital twin (right). The 13 attachments cover three categories of industrial manipulation.
+    </p>
+
+    <h3 class="cat-heading"><span class="cat-pill cat-torque">Torque</span></h3>
+    <div class="twin-grid">
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/ball_valve_photo.jpg" alt="Ball valve photo" />
+          <img src="assets/twins/ball_valve_cad.jpg" alt="Ball valve CAD" />
+        </div>
+        <p class="twin-label">Ball valve + friction rings</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/gate_small_photo.jpg" alt="Small gate valve photo" />
+          <img src="assets/twins/gate_small_cad.jpg" alt="Small gate valve CAD" />
+        </div>
+        <p class="twin-label">Gate valve, small</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/gate_large_photo.jpg" alt="Large gate valve photo" />
+          <img src="assets/twins/gate_large_cad.jpg" alt="Large gate valve CAD" />
+        </div>
+        <p class="twin-label">Gate valve, large</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/breaker_photo.jpg" alt="Circuit breaker photo" />
+          <img src="assets/twins/breaker_cad.jpg" alt="Circuit breaker CAD" />
+        </div>
+        <p class="twin-label">Circuit breaker</p>
+      </div>
+    </div>
+
+    <h3 class="cat-heading"><span class="cat-pill cat-precision">Precision</span></h3>
+    <div class="twin-grid">
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/lightbulb_photo.jpg" alt="Light bulb photo" />
+          <img src="assets/twins/lightbulb_cad.jpg" alt="Light bulb CAD" />
+        </div>
+        <p class="twin-label">Light bulb</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/thread_m8_photo.jpg" alt="M8 thread photo" />
+          <img src="assets/twins/thread_m8_cad.jpg" alt="M8 thread CAD" />
+        </div>
+        <p class="twin-label">Thread, M8</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/thread_m30_photo.jpg" alt="M30 thread photo" />
+          <img src="assets/twins/thread_m30_cad.jpg" alt="M30 thread CAD" />
+        </div>
+        <p class="twin-label">Thread, M30</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/pegs_photo.jpg" alt="Peg insertion photo" />
+          <img src="assets/twins/pegs_cad.jpg" alt="Peg insertion CAD" />
+        </div>
+        <p class="twin-label">Peg insertion</p>
+      </div>
+    </div>
+
+    <h3 class="cat-heading"><span class="cat-pill cat-assembly">Composed Assembly</span></h3>
+    <div class="twin-grid">
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/button_photo.jpg" alt="Button photo" />
+          <img src="assets/twins/button_cad.jpg" alt="Button CAD" />
+        </div>
+        <p class="twin-label">Hidden push button</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/lock_photo.jpg" alt="Lock and key photo" />
+          <img src="assets/twins/lock_cad.jpg" alt="Lock and key CAD" />
+        </div>
+        <p class="twin-label">Lock and key</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/drawer_photo.jpg" alt="Drawer photo" />
+          <img src="assets/twins/drawer_cad.jpg" alt="Drawer CAD" />
+        </div>
+        <p class="twin-label">Sliding drawer</p>
+      </div>
+      <div class="twin">
+        <div class="twin-pair">
+          <img src="assets/twins/damper_photo.jpg" alt="Shock absorber photo" />
+          <img src="assets/twins/damper_cad.jpg" alt="Shock absorber CAD" />
+        </div>
+        <p class="twin-label">Shock absorber<br /><span class="twin-note">occupies two cells</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- GET STARTED -->
+<section id="getstarted" class="section">
+  <div class="container">
+    <h2>Get Started</h2>
+    <p class="section-lede">Three steps to a working HiveBoard in your lab.</p>
+    <div class="steps">
+      <div class="step">
+        <div class="step-num">1</div>
+        <h3>Download the STL files</h3>
+        <p>Grab the latest CAD release from the project repository. The full library prints in a few hundred grams of PLA filament on a consumer-grade FDM printer.</p>
+        <a class="btn btn-small" href="https://github.com/ricardovgodoy/HiveBoard/tree/main/STL">Download STL →</a>
+      </div>
+      <div class="step">
+        <div class="step-num">2</div>
+        <h3>Print with the recommended profile</h3>
+        <p>PLA, 0.4&nbsp;mm nozzle, 0.20&nbsp;mm layer height, 4 perimeter walls, per-part-type infill (20–30%), 50&nbsp;mm/s. Detailed orientation tips and per-part settings are in the README.</p>
+        <a class="btn btn-small" href="https://github.com/ricardovgodoy/HiveBoard#recommended-3d-printing-settings">Print profile →</a>
+      </div>
+      <div class="step">
+        <div class="step-num">3</div>
+        <h3>Run the protocol</h3>
+        <p>Five recorded trials per attachment per platform. Log results in <code>trials.xlsx</code> (frozen header, dropdowns, color-coded categories) or the plain <code>trials.csv</code>. Submit your archive for cross-laboratory comparison.</p>
+        <a class="btn btn-small" href="#protocol">Read the protocol →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROTOCOL -->
+<section id="protocol" class="section section-alt">
+  <div class="container">
+    <h2>Evaluation Protocol</h2>
+    <div class="protocol-grid">
+      <div class="protocol-text">
+        <p>The protocol evaluates a manipulation system, defined as an end-effector (gripper or hand) plus a control interface. The interface may be a teleoperated arm with a standard input device, or a wearable interface or exoskeleton driving the end-effector directly.</p>
+        <p>For each attachment, the operator runs unrecorded familiarization trials until completion times stabilize, then records <strong>5 trials</strong>. Each trial is logged with outcome, completion time, attempts, regrasps, and (for the composed assembly attachments) the highest stage reached within the timeout.</p>
+        <p>The full per-attachment success criteria, timeouts, and stage definitions are documented in <code>PROTOCOL.md</code>.</p>
+      </div>
+      <div class="protocol-side">
+        <h3>What you get</h3>
+        <ul>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/PROTOCOL.md"><code>PROTOCOL.md</code></a> &mdash; full procedure</li>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/HOW_TO_FILL_TRIALS.md"><code>HOW_TO_FILL_TRIALS.md</code></a> &mdash; column-by-column instructions</li>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/trials.xlsx"><code>trials.xlsx</code></a> &mdash; styled Excel template</li>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/trials.csv"><code>trials.csv</code></a> &mdash; plain CSV for scripts</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="categories-overview">
+      <figure>
+        <img src="assets/categories/torque.jpg" alt="Torque category attachments" />
+        <figcaption><span class="cat-pill cat-torque">Torque</span> Ball valve, gate valves, breaker</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/categories/precision.jpg" alt="Precision category attachments" />
+        <figcaption><span class="cat-pill cat-precision">Precision</span> Light bulb, threads, peg insertion</figcaption>
+      </figure>
+      <figure>
+        <img src="assets/categories/assembly.jpg" alt="Assembly category attachments" />
+        <figcaption><span class="cat-pill cat-assembly">Assembly</span> Button, lock, drawer, shock absorber</figcaption>
+      </figure>
+    </div>
+  </div>
+</section>
+
+<!-- SIMULATION -->
+<section id="simulation" class="section">
+  <div class="container">
+    <h2>Simulation Assets</h2>
+    <p class="section-lede">Every attachment ships with articulated CAD that imports directly into common simulators.</p>
+    <div class="sim-grid">
+      <div class="sim-item">
+        <h3>URDF</h3>
+        <p>For ROS-based simulators, MuJoCo, and PyBullet</p>
+      </div>
+      <div class="sim-item">
+        <h3>USD</h3>
+        <p>For Isaac Sim and Omniverse workflows</p>
+      </div>
+      <div class="sim-item">
+        <h3>Articulated joints</h3>
+        <p>Revolute (valves, breaker, lock), helical (threads), prismatic (drawer), free-body with collision proxies (shock-absorber pin)</p>
+      </div>
+      <div class="sim-item">
+        <h3>Mass &amp; inertia</h3>
+        <p>Estimated from printed-part volume and PLA density, ready for physics simulation</p>
+      </div>
+    </div>
+    <p class="sim-note"><em>Simulation assets are uploaded as students complete the URDF and USD exports. Watch the repository for releases.</em></p>
+  </div>
+</section>
+
+<!-- RESOURCES -->
+<section id="resources" class="section section-alt">
+  <div class="container">
+    <h2>Resources</h2>
+    <div class="resource-grid">
+      <a class="resource-card" href="#" id="paper-card">
+        <div class="resource-icon">📄</div>
+        <h3>Paper</h3>
+        <p>Full description of design, manufacturing, and protocol</p>
+      </a>
+      <a class="resource-card" href="https://github.com/ricardovgodoy/HiveBoard">
+        <div class="resource-icon">💻</div>
+        <h3>GitHub</h3>
+        <p>STL, CAD, simulation assets, protocol, trial logging template</p>
+      </a>
+      <a class="resource-card" href="https://github.com/ricardovgodoy/HiveBoard/tree/main/Documentation">
+        <div class="resource-icon">📋</div>
+        <h3>Documentation</h3>
+        <p>Protocol, trial-logging instructions, and Excel template</p>
+      </a>
+      <a class="resource-card" href="#citation">
+        <div class="resource-icon">📚</div>
+        <h3>Citation</h3>
+        <p>BibTeX entry for citing HiveBoard in your work</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- CITATION -->
+<section id="citation" class="section">
+  <div class="container narrow">
+    <h2>Citation</h2>
+    <p>If you use HiveBoard, please cite the project paper:</p>
+    <pre class="bibtex"><code>@inproceedings{hiveboard2026,
+  title     = {HiveBoard: An Open, Modular, 3D-Printed Dexterity Benchmark
+               for Industrial Robotic Manipulation},
+  author    = {&lt;authors&gt;},
+  booktitle = {IEEE Robotics and Automation Practice (RA-P)},
+  year      = {2026}
+}</code></pre>
+    <button class="btn btn-small" id="copy-bibtex">Copy BibTeX</button>
+  </div>
+</section>
+
+<!-- ACKNOWLEDGEMENTS -->
+<section class="section section-alt">
+  <div class="container narrow">
+    <h2>Acknowledgements</h2>
+    <p>HiveBoard is developed at the USP Robotics Center, São Carlos School of Engineering, University of São Paulo. Cross-laboratory validation is conducted with collaborating laboratories internationally.</p>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© 2026 HiveBoard. Released under a permissive license. <a href="https://github.com/ricardovgodoy/HiveBoard">github.com/ricardovgodoy/HiveBoard</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

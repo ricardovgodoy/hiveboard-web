@@ -6,6 +6,8 @@ Source for the HiveBoard project website, deployed via GitHub Pages.
 
 **Project repository:** https://github.com/ricardovgodoy/HiveBoard
 
+**Demonstration video:** https://youtu.be/kaYB_Oc64nA
+
 ## Structure
 
     /
@@ -34,6 +36,7 @@ Any static-file server works:
 
 - **Author list:** open `index.html` and find every occurrence of `<authors>`. There are two: the hero block and the BibTeX. Replace with the final list.
 - **Paper link:** when the arXiv or RA-P PDF is up, set `href` on `#paper-link` (hero) and `#paper-card` (resources section).
+- **Video:** the YouTube ID is in two places, the iframe `src` and the "Watch on YouTube" link, plus the hero CTA and the resources card. Search for `kaYB_Oc64nA` to update.
 - **Color theme:** all colors are CSS variables at the top of `style.css`. Swap `--teal-700`, `--teal-600`, etc. to retheme.
 - **Adding sections:** copy any existing `<section>` block in `index.html` and adapt.
 

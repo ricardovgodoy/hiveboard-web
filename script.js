@@ -9,8 +9,7 @@ document.getElementById('copy-bibtex').addEventListener('click', () => {
   });
 });
 
-// Smooth scroll for in-page links is handled by CSS scroll-behavior.
-// Paper buttons currently link to '#' until the arXiv URL is known.
-// If you want them to point at a PDF, set href on:
+// Paper buttons currently point at '#' until the arXiv URL is known.
+// When the paper is up, set href on:
 //   #paper-link  (hero CTA)
 //   #paper-card  (resources card)

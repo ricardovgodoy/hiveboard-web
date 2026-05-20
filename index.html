@@ -7,7 +7,7 @@
 <meta name="description" content="HiveBoard is an open, modular, fully 3D-printed dexterity benchmark for industrial robotic manipulation. A hexagonal honeycomb base accepts 13 interchangeable attachments covering torque, precision, and composed assembly tasks." />
 <meta property="og:title" content="HiveBoard: A 3D-Printed Dexterity Benchmark for Industrial Robotic Manipulation" />
 <meta property="og:description" content="Open, modular, fully 3D-printable dexterity benchmark with 13 attachments across torque, precision, and composed assembly tasks." />
-<meta property="og:image" content="https://ricardovgodoy.github.io/hiveboard-web/assets/hero-clean.png" />
+<meta property="og:image" content="https://ricardovgodoy.github.io/hiveboard-web/assets/hero.jpg" />
 <meta property="og:type" content="website" />
 <meta name="twitter:card" content="summary_large_image" />
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -24,6 +24,7 @@
     </a>
     <nav class="site-nav">
       <a href="#overview">Overview</a>
+      <a href="#video">Video</a>
       <a href="#attachments">Attachments</a>
       <a href="#getstarted">Get Started</a>
       <a href="#protocol">Protocol</a>
@@ -43,10 +44,11 @@
       <a class="btn btn-primary" href="#" id="paper-link">📄 Paper</a>
       <a class="btn" href="https://github.com/ricardovgodoy/HiveBoard">💻 Code &amp; STL</a>
       <a class="btn" href="https://github.com/ricardovgodoy/HiveBoard/tree/main/Documentation">📋 Protocol</a>
+      <a class="btn" href="https://youtu.be/kaYB_Oc64nA">▶ Video</a>
       <a class="btn" href="#citation">📚 BibTeX</a>
     </div>
     <figure class="hero-figure">
-      <img src="assets/hero-clean.png" alt="HiveBoard with the full attachment library laid out on a benchtop" />
+      <img src="assets/hero.jpg" alt="HiveBoard with the full attachment library laid out on a benchtop" />
     </figure>
   </div>
 </section>
@@ -96,15 +98,34 @@
         </p>
       </div>
       <figure class="overview-figure">
-        <img src="assets/hive_empty-clean.png" alt="The HiveBoard base, a seven-cell hexagonal honeycomb" />
+        <img src="assets/hive_empty.jpg" alt="The HiveBoard base, a seven-cell hexagonal honeycomb" />
         <figcaption>The HiveBoard base: seven hexagonal cells in a honeycomb pattern.</figcaption>
       </figure>
     </div>
   </div>
 </section>
 
+<!-- VIDEO -->
+<section id="video" class="section section-alt">
+  <div class="container narrow">
+    <h2>Demonstration Video</h2>
+    <p class="section-lede">A walk-through of the board, the attachment library, and the evaluation protocol.</p>
+    <div class="video-wrap">
+      <iframe
+        src="https://www.youtube-nocookie.com/embed/kaYB_Oc64nA"
+        title="HiveBoard demonstration video"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen
+        loading="lazy"></iframe>
+    </div>
+    <p class="video-link"><a href="https://youtu.be/kaYB_Oc64nA">Watch on YouTube ↗</a></p>
+  </div>
+</section>
+
 <!-- ATTACHMENTS -->
-<section id="attachments" class="section section-alt">
+<section id="attachments" class="section">
   <div class="container">
     <h2>Attachment Library</h2>
     <p class="section-lede">
@@ -210,7 +231,7 @@
 </section>
 
 <!-- GET STARTED -->
-<section id="getstarted" class="section">
+<section id="getstarted" class="section section-alt">
   <div class="container">
     <h2>Get Started</h2>
     <p class="section-lede">Three steps to a working HiveBoard in your lab.</p>
@@ -224,7 +245,7 @@
       <div class="step">
         <div class="step-num">2</div>
         <h3>Print with the recommended profile</h3>
-        <p>PLA, 0.4&nbsp;mm nozzle, 0.20&nbsp;mm layer height, 4 perimeter walls, per-part-type infill (20–30%), 50&nbsp;mm/s. Detailed orientation tips and per-part settings are in the README.</p>
+        <p>PLA, 0.4&nbsp;mm nozzle, 0.20&nbsp;mm layer height, 4 perimeter walls, per-part-type infill (20 to 30%), 50&nbsp;mm/s. Detailed orientation tips and per-part settings are in the README.</p>
         <a class="btn btn-small" href="https://github.com/ricardovgodoy/HiveBoard#recommended-3d-printing-settings">Print profile →</a>
       </div>
       <div class="step">
@@ -238,7 +259,7 @@
 </section>
 
 <!-- PROTOCOL -->
-<section id="protocol" class="section section-alt">
+<section id="protocol" class="section">
   <div class="container">
     <h2>Evaluation Protocol</h2>
     <div class="protocol-grid">
@@ -250,25 +271,25 @@
       <div class="protocol-side">
         <h3>What you get</h3>
         <ul>
-          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/PROTOCOL.md"><code>PROTOCOL.md</code></a> &mdash; full procedure</li>
-          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/HOW_TO_FILL_TRIALS.md"><code>HOW_TO_FILL_TRIALS.md</code></a> &mdash; column-by-column instructions</li>
-          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/trials.xlsx"><code>trials.xlsx</code></a> &mdash; styled Excel template</li>
-          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/trials.csv"><code>trials.csv</code></a> &mdash; plain CSV for scripts</li>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/PROTOCOL.md"><code>PROTOCOL.md</code></a>, full procedure</li>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/HOW_TO_FILL_TRIALS.md"><code>HOW_TO_FILL_TRIALS.md</code></a>, column-by-column instructions</li>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/trials.xlsx"><code>trials.xlsx</code></a>, styled Excel template</li>
+          <li><a href="https://github.com/ricardovgodoy/HiveBoard/blob/main/Documentation/trials.csv"><code>trials.csv</code></a>, plain CSV for scripts</li>
         </ul>
       </div>
     </div>
 
     <div class="categories-overview">
       <figure>
-        <img src="assets/categories/POWER-BASED-TASKS.png" alt="Torque category attachments" />
+        <img src="assets/categories/torque.jpg" alt="Torque category attachments" />
         <figcaption><span class="cat-pill cat-torque">Torque</span> Ball valve, gate valves, breaker</figcaption>
       </figure>
       <figure>
-        <img src="assets/categories/precision-based-clean.png" alt="Precision category attachments" />
+        <img src="assets/categories/precision.jpg" alt="Precision category attachments" />
         <figcaption><span class="cat-pill cat-precision">Precision</span> Light bulb, threads, peg insertion</figcaption>
       </figure>
       <figure>
-        <img src="assets/categories/COMPOSED_ASSEMBLY.png" alt="Assembly category attachments" />
+        <img src="assets/categories/assembly.jpg" alt="Assembly category attachments" />
         <figcaption><span class="cat-pill cat-assembly">Assembly</span> Button, lock, drawer, shock absorber</figcaption>
       </figure>
     </div>
@@ -276,7 +297,7 @@
 </section>
 
 <!-- SIMULATION -->
-<section id="simulation" class="section">
+<section id="simulation" class="section section-alt">
   <div class="container">
     <h2>Simulation Assets</h2>
     <p class="section-lede">Every attachment ships with articulated CAD that imports directly into common simulators.</p>
@@ -303,7 +324,7 @@
 </section>
 
 <!-- RESOURCES -->
-<section id="resources" class="section section-alt">
+<section id="resources" class="section">
   <div class="container">
     <h2>Resources</h2>
     <div class="resource-grid">
@@ -317,22 +338,22 @@
         <h3>GitHub</h3>
         <p>STL, CAD, simulation assets, protocol, trial logging template</p>
       </a>
+      <a class="resource-card" href="https://youtu.be/kaYB_Oc64nA">
+        <div class="resource-icon">▶</div>
+        <h3>Video</h3>
+        <p>Walk-through of the board and the evaluation protocol</p>
+      </a>
       <a class="resource-card" href="https://github.com/ricardovgodoy/HiveBoard/tree/main/Documentation">
         <div class="resource-icon">📋</div>
         <h3>Documentation</h3>
         <p>Protocol, trial-logging instructions, and Excel template</p>
-      </a>
-      <a class="resource-card" href="#citation">
-        <div class="resource-icon">📚</div>
-        <h3>Citation</h3>
-        <p>BibTeX entry for citing HiveBoard in your work</p>
       </a>
     </div>
   </div>
 </section>
 
 <!-- CITATION -->
-<section id="citation" class="section">
+<section id="citation" class="section section-alt">
   <div class="container narrow">
     <h2>Citation</h2>
     <p>If you use HiveBoard, please cite the project paper:</p>
@@ -340,7 +361,7 @@
   title     = {HiveBoard: An Open, Modular, 3D-Printed Dexterity Benchmark
                for Industrial Robotic Manipulation},
   author    = {&lt;authors&gt;},
-  booktitle = {TBD},
+  booktitle = {IEEE Robotics and Automation Practice (RA-P)},
   year      = {2026}
 }</code></pre>
     <button class="btn btn-small" id="copy-bibtex">Copy BibTeX</button>
@@ -348,7 +369,7 @@
 </section>
 
 <!-- ACKNOWLEDGEMENTS -->
-<section class="section section-alt">
+<section class="section">
   <div class="container narrow">
     <h2>Acknowledgements</h2>
     <p>HiveBoard is developed at the USP Robotics Center, São Carlos School of Engineering, University of São Paulo. Cross-laboratory validation is conducted with collaborating laboratories internationally.</p>

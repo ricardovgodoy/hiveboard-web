@@ -43,6 +43,7 @@ body.nav-open {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -423,8 +424,7 @@ h3 {
 .image-frame img {
   display: block;
   width: 100%;
-  aspect-ratio: 1.5 / 1;
-  object-fit: cover;
+  height: auto;
   filter: contrast(1.02) saturate(0.82);
 }
 
@@ -529,6 +529,7 @@ h3 {
 .base-figure img {
   display: block;
   width: 100%;
+  height: auto;
   mix-blend-mode: multiply;
 }
 
@@ -715,6 +716,7 @@ h3 {
 .twin-pair {
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: start;
   gap: 1px;
   background: var(--line);
   border-bottom: 1px solid var(--line);
@@ -723,8 +725,7 @@ h3 {
 .twin-pair img {
   display: block;
   width: 100%;
-  aspect-ratio: 1 / 1;
-  object-fit: cover;
+  height: auto;
   background: #eceae4;
 }
 

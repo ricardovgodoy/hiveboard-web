@@ -1,45 +1,44 @@
-# HiveBoard project page
+# HiveBoard project website
 
-Source for the HiveBoard project website, deployed via GitHub Pages.
+Static project page for HiveBoard, the open modular dexterity benchmark for industrial robotic manipulation.
 
-**Live at:** https://ricardovgodoy.github.io/hiveboard-web/
+- **Website:** https://www.ricardovgodoy.com/hiveboard-web/
+- **Canonical project repository:** https://github.com/EESC-LabRoM/HiveBoard
+- **Demonstration video:** https://youtu.be/kaYB_Oc64nA
 
-**Project repository:** https://github.com/ricardovgodoy/HiveBoard
+## Files
 
-**Demonstration video:** https://youtu.be/kaYB_Oc64nA
+```text
+/
+├── index.html
+├── style.css
+├── script.js
+└── assets/
+    ├── hiveboard-mark.svg
+    ├── hero-clean.png
+    ├── hero-clean.webp
+    ├── hive_empty-clean.png
+    ├── hive_empty-clean.webp
+    └── twins/
+```
 
-## Structure
-
-    /
-    ├── index.html        # main page
-    ├── style.css         # all styles
-    ├── script.js         # copy-BibTeX button
-    ├── assets/
-    │   ├── hero.jpg              # hero shot of full board
-    │   ├── hive_empty.jpg        # bare honeycomb base
-    │   ├── twins/                # 24 paired photo+CAD images (12 attachments)
-    │   └── categories/           # 3 category overview shots
-    └── README.md
-
-## Deploy
-
-Push to the `main` branch and enable GitHub Pages in repo Settings → Pages, source: `main` branch / root folder. The site builds automatically.
+The benchmark files do not live in this repository. STL, STEP, simulation, and protocol files are maintained in [`EESC-LabRoM/HiveBoard`](https://github.com/EESC-LabRoM/HiveBoard).
 
 ## Local preview
 
-Any static-file server works:
+```bash
+python3 -m http.server 8000
+```
 
-    python3 -m http.server 8000
-    # then open http://localhost:8000
+Open `http://localhost:8000`.
 
-## Editing
+## Updating project metadata
 
-- **Author list:** open `index.html` and find every occurrence of `<authors>`. There are two: the hero block and the BibTeX. Replace with the final list.
-- **Paper link:** when the arXiv or RA-P PDF is up, set `href` on `#paper-link` (hero) and `#paper-card` (resources section).
-- **Video:** the YouTube ID is in two places, the iframe `src` and the "Watch on YouTube" link, plus the hero CTA and the resources card. Search for `kaYB_Oc64nA` to update.
-- **Color theme:** all colors are CSS variables at the top of `style.css`. Swap `--teal-700`, `--teal-600`, etc. to retheme.
-- **Adding sections:** copy any existing `<section>` block in `index.html` and adapt.
+- Update file-format links in the `#files` section of `index.html` when new simulation exports are released.
+- Replace the URDF “coming soon” note with a repository link when those files are published.
+- Replace the temporary repository citation after the paper metadata becomes public.
+- Keep task conditions and timeouts synchronized with `Documentation/PROTOCOL.md` in the canonical repository.
 
-## License
+## Deployment
 
-Content released under the same license as the HiveBoard project.
+GitHub Pages publishes the `main` branch from the repository root.

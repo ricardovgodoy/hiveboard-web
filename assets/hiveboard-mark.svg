@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 106" role="img" aria-labelledby="title">
+  <title id="title">HiveBoard hexagonal mark</title>
+  <g fill="none" stroke="#f5f2e8" stroke-width="4" stroke-linejoin="round">
+    <path d="M50 4h20l10 17-10 17H50L40 21Z"/>
+    <path d="M80 21h20l10 17-10 17H80L70 38Z"/>
+    <path d="M80 55h20l10 17-10 17H80L70 72Z"/>
+    <path d="M50 72h20l10 17-10 17H50L40 89Z"/>
+    <path d="M20 55h20l10 17-10 17H20L10 72Z"/>
+    <path d="M20 21h20l10 17-10 17H20L10 38Z"/>
+  </g>
+  <path d="M50 38h20l10 17-10 17H50L40 55Z" fill="#f1b718" stroke="#f5f2e8" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M52 45v20m16-20v20M52 55h16" fill="none" stroke="#171713" stroke-width="5" stroke-linecap="square"/>
+</svg>

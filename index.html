@@ -51,7 +51,7 @@
         <div class="hero-copy reveal">
           <p class="kicker">Open hardware · industrial manipulation</p>
           <h1>A modular benchmark for robot dexterity</h1>
-          <p class="hero-lede">HiveBoard combines a seven-cell press-fit base, interchangeable task modules, and a fixed data-collection protocol. The released files cover fabrication, simulation, and cross-laboratory evaluation.</p>
+          <p class="hero-lede">HiveBoard combines a seven-cell press-fit base, interchangeable attachments, and a fixed protocol for evaluating manipulation interfaces across laboratories. Fabrication and simulation files are public.</p>
           <div class="hero-actions">
             <a class="button button-primary" href="https://github.com/EESC-LabRoM/HiveBoard" target="_blank" rel="noopener">Open repository <span aria-hidden="true">↗</span></a>
             <a class="button" href="https://github.com/EESC-LabRoM/HiveBoard/tree/main/STL" target="_blank" rel="noopener">Browse STL files</a>
@@ -64,7 +64,7 @@
           <div class="image-frame">
             <picture>
               <source srcset="assets/hero-clean.webp" type="image/webp">
-              <img src="assets/hero-clean.png" width="1264" height="842" alt="HiveBoard base surrounded by its 3D-printed industrial manipulation modules">
+              <img src="assets/hero-clean.png" width="1264" height="842" alt="HiveBoard base surrounded by its 3D-printed industrial manipulation attachments">
             </picture>
           </div>
           <figcaption>Seven-cell base and current physical task set.</figcaption>
@@ -86,12 +86,13 @@
         <div class="section-copy reveal">
           <p class="section-index">01 / Benchmark</p>
           <h2>One base, interchangeable industrial tasks</h2>
-          <p>Each module uses the same hexagonal footprint and seats in the base without fasteners. A laboratory can print the hardware, change the board configuration between trials, and run the same task definitions on different robot platforms.</p>
+          <p>Each attachment uses the same hexagonal footprint and seats in the base without fasteners. A laboratory can print the hardware, change the board configuration between trials, and run the same task definitions on different robot platforms.</p>
           <p>The protocol evaluates the manipulation system as a whole: end-effector, control interface, perception, and operator input where applicable. It records task performance; it does not produce a single platform ranking.</p>
 
           <dl class="benchmark-details">
             <div><dt>Manufacturing</dt><dd>Consumer FDM printer, PLA, 0.4 mm nozzle</dd></div>
             <div><dt>Mounting</dt><dd>Horizontal or vertical rigid fixture</dd></div>
+            <div><dt>Difficulty</dt><dd>Four-piece snap-on friction-ring set for the ball valve</dd></div>
             <div><dt>Control</dt><dd>Teleoperation, wearable interfaces, or exoskeletons</dd></div>
             <div><dt>Evaluation</dt><dd>Outcome, time, attempts, regrasps, and assembly stage</dd></div>
           </dl>
@@ -108,7 +109,7 @@
 
       <div class="container workflow reveal" role="group" aria-label="Benchmark workflow">
         <div><span>01</span><strong>Print</strong><small>STL and print profile</small></div>
-        <div><span>02</span><strong>Mount</strong><small>Press-fit task modules</small></div>
+        <div><span>02</span><strong>Mount</strong><small>Press-fit attachments</small></div>
         <div><span>03</span><strong>Execute</strong><small>Fixed success criteria</small></div>
         <div><span>04</span><strong>Log</strong><small>65-row trial template</small></div>
       </div>
@@ -118,7 +119,7 @@
       <div class="container video-grid">
         <div class="video-copy reveal">
           <p class="section-index section-index-light">02 / Demonstration</p>
-          <h2>Board, modules, and trial procedure</h2>
+          <h2>Board, attachments, and trial procedure</h2>
           <p>The demonstration covers the mechanical interface, the task library, and the measurements recorded during evaluation.</p>
           <a class="button button-light" href="https://youtu.be/kaYB_Oc64nA" target="_blank" rel="noopener">Watch on YouTube <span aria-hidden="true">↗</span></a>
         </div>
@@ -132,9 +133,9 @@
       <div class="container section-heading reveal">
         <div>
           <p class="section-index">03 / Task set</p>
-          <h2>Physical modules and digital twins</h2>
+          <h2>Physical attachments and digital twins</h2>
         </div>
-        <p>Twelve module designs produce thirteen logged conditions because the ball valve is tested both with and without its friction ring. Images pair printed hardware with its CAD model.</p>
+        <p>The library comprises twelve printed attachments and a four-piece friction-ring accessory set. The ball valve is evaluated without and with a ring fitted, producing thirteen protocol entries.</p>
       </div>
 
       <div class="container task-category reveal">
@@ -144,19 +145,19 @@
         </header>
         <div class="task-grid">
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/ball_valve_photo.jpg" width="600" height="600" loading="lazy" alt="Printed ball valve module"><img src="assets/twins/ball_valve_cad.jpg" width="600" height="600" loading="lazy" alt="Ball valve CAD model"></div>
-            <div class="task-body"><h4>Ball valve + friction ring</h4><p>90° rotation · 60 s / 90 s</p></div>
+            <div class="twin-pair"><img src="assets/twins/ball_valve_photo.jpg" width="600" height="600" loading="lazy" alt="Printed ball valve attachment"><img src="assets/twins/ball_valve_cad.jpg" width="600" height="600" loading="lazy" alt="Ball valve CAD model"></div>
+            <div class="task-body"><h4>Ball valve + friction-ring set</h4><p>Two 90° conditions · 60 s / 90 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/gate_small_photo.jpg" width="600" height="600" loading="lazy" alt="Printed small gate valve module"><img src="assets/twins/gate_small_cad.jpg" width="600" height="600" loading="lazy" alt="Small gate valve CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/gate_small_photo.jpg" width="600" height="600" loading="lazy" alt="Printed small gate valve attachment"><img src="assets/twins/gate_small_cad.jpg" width="600" height="600" loading="lazy" alt="Small gate valve CAD model"></div>
             <div class="task-body"><h4>Gate valve, small</h4><p>Full stem travel · 90 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/gate_large_photo.jpg" width="600" height="600" loading="lazy" alt="Printed large gate valve module"><img src="assets/twins/gate_large_cad.jpg" width="600" height="600" loading="lazy" alt="Large gate valve CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/gate_large_photo.jpg" width="600" height="600" loading="lazy" alt="Printed large gate valve attachment"><img src="assets/twins/gate_large_cad.jpg" width="600" height="600" loading="lazy" alt="Large gate valve CAD model"></div>
             <div class="task-body"><h4>Gate valve, large</h4><p>Full stem travel · 120 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/breaker_photo.jpg" width="600" height="600" loading="lazy" alt="Printed circuit breaker module"><img src="assets/twins/breaker_cad.jpg" width="600" height="600" loading="lazy" alt="Circuit breaker CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/breaker_photo.jpg" width="600" height="600" loading="lazy" alt="Printed circuit breaker attachment"><img src="assets/twins/breaker_cad.jpg" width="600" height="600" loading="lazy" alt="Circuit breaker CAD model"></div>
             <div class="task-body"><h4>Circuit breaker</h4><p>Toggle actuation · 60 s</p></div>
           </article>
         </div>
@@ -169,19 +170,19 @@
         </header>
         <div class="task-grid">
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/lightbulb_photo.jpg" width="600" height="600" loading="lazy" alt="Printed light bulb module"><img src="assets/twins/lightbulb_cad.jpg" width="600" height="600" loading="lazy" alt="Light bulb module CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/lightbulb_photo.jpg" width="600" height="600" loading="lazy" alt="Printed light bulb attachment"><img src="assets/twins/lightbulb_cad.jpg" width="600" height="600" loading="lazy" alt="Light bulb attachment CAD model"></div>
             <div class="task-body"><h4>Light bulb</h4><p>Thread until seated · 120 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/thread_m8_photo.jpg" width="600" height="600" loading="lazy" alt="Printed M8 thread module"><img src="assets/twins/thread_m8_cad.jpg" width="600" height="600" loading="lazy" alt="M8 thread CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/thread_m8_photo.jpg" width="600" height="600" loading="lazy" alt="Printed M8 thread attachment"><img src="assets/twins/thread_m8_cad.jpg" width="600" height="600" loading="lazy" alt="M8 thread CAD model"></div>
             <div class="task-body"><h4>Thread, M8</h4><p>Full available travel · 120 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/thread_m30_photo.jpg" width="600" height="600" loading="lazy" alt="Printed M30 thread module"><img src="assets/twins/thread_m30_cad.jpg" width="600" height="600" loading="lazy" alt="M30 thread CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/thread_m30_photo.jpg" width="600" height="600" loading="lazy" alt="Printed M30 thread attachment"><img src="assets/twins/thread_m30_cad.jpg" width="600" height="600" loading="lazy" alt="M30 thread CAD model"></div>
             <div class="task-body"><h4>Thread, M30</h4><p>Full available travel · 120 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/pegs_photo.jpg" width="600" height="600" loading="lazy" alt="Printed peg insertion module"><img src="assets/twins/pegs_cad.jpg" width="600" height="600" loading="lazy" alt="Peg insertion CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/pegs_photo.jpg" width="600" height="600" loading="lazy" alt="Printed peg insertion attachment"><img src="assets/twins/pegs_cad.jpg" width="600" height="600" loading="lazy" alt="Peg insertion CAD model"></div>
             <div class="task-body"><h4>Peg insertion</h4><p>Fully seated · 120 s</p></div>
           </article>
         </div>
@@ -194,19 +195,19 @@
         </header>
         <div class="task-grid">
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/button_photo.jpg" width="600" height="600" loading="lazy" alt="Printed covered push-button module"><img src="assets/twins/button_cad.jpg" width="600" height="600" loading="lazy" alt="Covered push-button CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/button_photo.jpg" width="600" height="600" loading="lazy" alt="Printed covered push-button attachment"><img src="assets/twins/button_cad.jpg" width="600" height="600" loading="lazy" alt="Covered push-button CAD model"></div>
             <div class="task-body"><h4>Hidden push button</h4><p>2 stages · 60 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/lock_photo.jpg" width="600" height="600" loading="lazy" alt="Printed lock and key module"><img src="assets/twins/lock_cad.jpg" width="600" height="600" loading="lazy" alt="Lock and key CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/lock_photo.jpg" width="600" height="600" loading="lazy" alt="Printed lock and key attachment"><img src="assets/twins/lock_cad.jpg" width="600" height="600" loading="lazy" alt="Lock and key CAD model"></div>
             <div class="task-body"><h4>Lock and key</h4><p>3 stages · 180 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/drawer_photo.jpg" width="600" height="600" loading="lazy" alt="Printed sliding drawer module"><img src="assets/twins/drawer_cad.jpg" width="600" height="600" loading="lazy" alt="Sliding drawer CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/drawer_photo.jpg" width="600" height="600" loading="lazy" alt="Printed sliding drawer attachment"><img src="assets/twins/drawer_cad.jpg" width="600" height="600" loading="lazy" alt="Sliding drawer CAD model"></div>
             <div class="task-body"><h4>Sliding drawer</h4><p>3 stages · 120 s</p></div>
           </article>
           <article class="task-card">
-            <div class="twin-pair"><img src="assets/twins/damper_photo.jpg" width="600" height="600" loading="lazy" alt="Printed shock absorber module"><img src="assets/twins/damper_cad.jpg" width="600" height="600" loading="lazy" alt="Shock absorber CAD model"></div>
+            <div class="twin-pair"><img src="assets/twins/damper_photo.jpg" width="600" height="600" loading="lazy" alt="Printed shock absorber attachment"><img src="assets/twins/damper_cad.jpg" width="600" height="600" loading="lazy" alt="Shock absorber CAD model"></div>
             <div class="task-body"><h4>Shock absorber</h4><p>3 stages · 180 s · 2 cells</p></div>
           </article>
         </div>
@@ -247,15 +248,15 @@
       </div>
 
       <div class="container files-list reveal">
-        <a href="https://github.com/EESC-LabRoM/HiveBoard/tree/main/STL" target="_blank" rel="noopener"><span class="file-code">STL</span><div><strong>Printable parts</strong><p>Base, task modules, and mechanical components</p></div><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/EESC-LabRoM/HiveBoard/tree/main/STL" target="_blank" rel="noopener"><span class="file-code">STL</span><div><strong>Printable parts</strong><p>Base, attachments, and mechanical components</p></div><span aria-hidden="true">↗</span></a>
         <a href="https://github.com/EESC-LabRoM/HiveBoard/tree/main/CAD" target="_blank" rel="noopener"><span class="file-code">STEP</span><div><strong>Source CAD</strong><p>Assemblies and individual components for modification</p></div><span aria-hidden="true">↗</span></a>
-        <a href="https://github.com/EESC-LabRoM/HiveBoard/tree/main/Simulation" target="_blank" rel="noopener"><span class="file-code">USD</span><div><strong>Simulation assets</strong><p>USD and USDZ assemblies · URDF coming soon</p></div><span aria-hidden="true">↗</span></a>
+        <a href="https://github.com/EESC-LabRoM/HiveBoard/tree/main/Simulation" target="_blank" rel="noopener"><span class="file-code">USD</span><div><strong>Simulation assets</strong><p>Articulated USD and USDZ assemblies · URDF coming soon</p></div><span aria-hidden="true">↗</span></a>
         <a href="https://github.com/EESC-LabRoM/HiveBoard/tree/main/Documentation" target="_blank" rel="noopener"><span class="file-code">DATA</span><div><strong>Evaluation documents</strong><p>Protocol, field guide, CSV, and Excel template</p></div><span aria-hidden="true">↗</span></a>
       </div>
 
       <div class="container build-notes reveal">
         <div><span>Print profile</span><strong>PLA · 0.20 mm layers · 4 walls</strong></div>
-        <div><span>Fit check</span><strong>Print one cell and one module first</strong></div>
+        <div><span>Fit check</span><strong>Print one cell and one attachment first</strong></div>
         <div><span>Canonical settings</span><a href="https://github.com/EESC-LabRoM/HiveBoard#recommended-3d-printing-settings" target="_blank" rel="noopener">Read the repository guide ↗</a></div>
       </div>
     </section>
@@ -269,7 +270,7 @@
         </div>
         <div class="citation-box reveal">
           <pre><code id="repository-citation">@software{hiveboard2026,
-  author = {{EESC/USP Mobile Robotics Laboratory}},
+  author = {{USP Center for Robotics}},
   title  = {HiveBoard: An Open, Modular, 3D-Printed Dexterity
             Benchmark for Industrial Robotic Manipulation},
   year   = {2026},

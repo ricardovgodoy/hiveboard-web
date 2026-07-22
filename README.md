@@ -3,7 +3,7 @@
 Static project page for HiveBoard, the open modular dexterity benchmark for industrial robotic manipulation.
 
 - **Website:** https://www.ricardovgodoy.com/hiveboard-web/
-- **Canonical project repository:** https://github.com/EESC-LabRoM/HiveBoard
+- **Project repository:** https://github.com/EESC-LabRoM/HiveBoard
 - **Demonstration video:** https://youtu.be/kaYB_Oc64nA
 
 ## Files
